@@ -140,256 +140,322 @@
 				<div class="max-w-screen-lg mx-auto">
 					<div class="flex gap-x-8 py-8">
 						<button
-							class="px-4 py-2 text-black border-b-2 border-sky-500 font-semibold text-lg"
+							class="tab-button px-4 py-2 border-b-2 border-sky-500 font-semibold text-lg text-black"
+							data-tab="roadside"
 						>
 							Roadside
 						</button>
 						<button
-							class="px-4 py-2 text-black border-b-2 border-sky-500 font-semibold text-lg"
+							class="tab-button px-4 py-2 border-b-2 border-transparent font-semibold text-lg text-gray-500"
+							data-tab="mobile-mechanic"
 						>
 							Mobile Mechanic
 						</button>
 						<button
-							class="px-4 py-2 text-black border-b-2 border-sky-500 font-semibold text-lg"
+							class="tab-button px-4 py-2 border-b-2 border-transparent font-semibold text-lg text-gray-500"
+							data-tab="loans"
 						>
 							Loans
 						</button>
 						<button
-							class="px-4 py-2 text-black border-b-2 border-sky-500 font-semibold text-lg"
+							class="tab-button px-4 py-2 border-b-2 border-transparent font-semibold text-lg text-gray-500"
+							data-tab="insurance"
 						>
 							Insurance
 						</button>
 					</div>
-					<div
-						class="hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
-					>
-						<!-- Roadisde -->
-						<div class="col-span-2 bg-gray-100 h-full p-8">
-							<div
-								class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
-							>
-								<i class="bx bxs-car-crash text-4xl"></i>
+					<div class="tab-content-container">
+						<!-- Roadside -->
+						<div
+							class="tab-content hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
+							data-tab="roadside"
+						>
+							<div class="col-span-2 bg-gray-100 h-full p-8">
+								<div
+									class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
+								>
+									<i class="bx bxs-car-crash text-4xl"></i>
+								</div>
+								<h3 class="text-3xl font-semibold py-4">Roadside</h3>
+								<p class="pb-4 text-lg font-medium">
+									Get back on the road in no time with our quick and reliable
+									roadside assistance services.
+								</p>
+								<div class="inline-flex items-center gap-x-2 justify-center">
+									<a
+										href="#"
+										class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+									>
+										Learn More
+									</a>
+								</div>
 							</div>
-							<h3 class="text-3xl font-semibold py-4">Roadside</h3>
-							<p class="pb-4 text-lg font-medium">
-								Get back on the road in no time with our quick and reliable
-								roadside assistance services.
-							</p>
-							<div class="inline-flex items-center gap-x-2 justify-center">
-								<a
-									href="#"
-									class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
-								>
-									Learn More</a
-								>
+							<div class="col-span-4 bg-white p-8">
+								<div class="rounded-xl overflow-hidden h-60">
+									<img
+										src="./images/roadside.png"
+										alt=""
+									/>
+								</div>
+								<ul class="flex flex-col gap-y-4 py-8">
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Fast Response: We're there when you need us, providing
+										prompt and reliable roadside help.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Comprehensive Coverage: From flat tires to dead batteries,
+										we handle it all to get you moving again.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										24/7 Availability: Day or night, our roadside assistance is
+										always just a call away.
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-span-4 bg-white p-8">
-							<div class="rounded-xl overflow-hidden h-60">
-								<img
-									src="./images/roadside.png"
-									alt=""
-								/>
-							</div>
-							<ul class="flex flex-col gap-y-4 py-8">
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Fast Response: We're there when you need us, providing prompt
-									and reliable roadside help.
-								</li>
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Comprehensive Coverage: From flat tires to dead batteries, we
-									handle it all to get you moving again.
-								</li>
 
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									24/7 Availability: Day or night, our roadside assistance is
-									always just a call away.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Mobile Mechanic -->
-					<div
-						class="hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
-					>
-						<div class="col-span-2 bg-gray-100 h-full p-8">
-							<div
-								class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
-							>
-								<i class="bx bxs-car-crash text-4xl"></i>
-							</div>
-							<h3 class="text-3xl font-semibold py-4">Mobile Mechanic</h3>
-							<p class="pb-4 text-lg font-medium">
-								Car trouble? No problem! Our mobile mechanics come to you,
-								providing expert service wherever you are.
-							</p>
-							<div class="inline-flex items-center gap-x-2 justify-center">
-								<a
-									href="#"
-									class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+						<!-- Mobile Mechanic -->
+						<div
+							class="tab-content hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
+							data-tab="mobile-mechanic"
+						>
+							<div class="col-span-2 bg-gray-100 h-full p-8">
+								<div
+									class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
 								>
-									Learn More</a
-								>
+									<i class="bx bxs-car-crash text-4xl"></i>
+								</div>
+								<h3 class="text-3xl font-semibold py-4">Mobile Mechanic</h3>
+								<p class="pb-4 text-lg font-medium">
+									Car trouble? No problem! Our mobile mechanics come to you,
+									providing expert service wherever you are.
+								</p>
+								<div class="inline-flex items-center gap-x-2 justify-center">
+									<a
+										href="#"
+										class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+									>
+										Learn More
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="col-span-4 bg-white p-8">
-							<div class="rounded-xl overflow-hidden h-60">
-								<img
-									src="./images/mobile-mechanic.png"
-									alt=""
-								/>
-							</div>
-							<ul class="flex flex-col gap-y-4 py-8">
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Convenient Service: Our mechanics come to you, saving you time
-									and hassle.
-								</li>
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Expert Technicians: Skilled professionals equipped to handle
-									repairs and maintenance on-site.
-								</li>
-
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Flexible Scheduling: Book appointments that fit your schedule,
-									whether at home or work.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Loans -->
-					<div
-						class="hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
-					>
-						<div class="col-span-2 bg-gray-100 h-full p-8">
-							<div
-								class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
-							>
-								<i class="bx bxs-car-crash text-4xl"></i>
-							</div>
-							<h3 class="text-3xl font-semibold py-4">Loans</h3>
-							<p class="pb-4 text-lg font-medium">
-								Need a financial boost? Explore our flexible loan options
-								designed to get you driving your dream car without the hassle.
-							</p>
-							<div class="inline-flex items-center gap-x-2 justify-center">
-								<a
-									href="#"
-									class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
-								>
-									Learn More</a
-								>
+							<div class="col-span-4 bg-white p-8">
+								<div class="rounded-xl overflow-hidden h-60">
+									<img
+										src="./images/mobile-mechanic.png"
+										alt=""
+									/>
+								</div>
+								<ul class="flex flex-col gap-y-4 py-8">
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Convenient Service: Our mechanics come to you, saving you
+										time and hassle.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Expert Technicians: Skilled professionals equipped to handle
+										repairs and maintenance on-site.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Flexible Scheduling: Book appointments that fit your
+										schedule, whether at home or work.
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-span-4 bg-white p-8">
-							<div class="rounded-xl overflow-hidden h-60">
-								<img
-									src="./images/auto-loans.png"
-									alt=""
-								/>
-							</div>
-							<ul class="flex flex-col gap-y-4 py-8">
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Flexible Options: Tailored loan plans to suit your financial
-									needs and budget.
-								</li>
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Quick Approval: Streamlined processes to get you the funds you
-									need fast.
-								</li>
 
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Competitive Rates: Enjoy low-interest rates and favorable
-									terms to finance your dream car.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Insurance -->
-					<div
-						class=" shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
-					>
-						<div class="col-span-2 bg-gray-100 h-full p-8">
-							<div
-								class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
-							>
-								<i class="bx bxs-car-crash text-4xl"></i>
-							</div>
-							<h3 class="text-3xl font-semibold py-4">Insurance</h3>
-							<p class="pb-4 text-lg font-medium">
-								Drive with confidence knowing you're covered. We offer comprehensive insurance plans tailored to your needs.
-							</p>
-							<div class="inline-flex items-center gap-x-2 justify-center">
-								<a
-									href="#"
-									class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+						<!-- Loans -->
+						<div
+							class="tab-content hidden shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
+							data-tab="loans"
+						>
+							<div class="col-span-2 bg-gray-100 h-full p-8">
+								<div
+									class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
 								>
-									Learn More</a
-								>
+									<i class="bx bxs-car-crash text-4xl"></i>
+								</div>
+								<h3 class="text-3xl font-semibold py-4">Loans</h3>
+								<p class="pb-4 text-lg font-medium">
+									Need a financial boost? Explore our flexible loan options
+									designed to get you driving your dream car without the hassle.
+								</p>
+								<div class="inline-flex items-center gap-x-2 justify-center">
+									<a
+										href="#"
+										class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+									>
+										Learn More
+									</a>
+								</div>
+							</div>
+							<div class="col-span-4 bg-white p-8">
+								<div class="rounded-xl overflow-hidden h-60">
+									<img
+										src="./images/auto-loans.png"
+										alt=""
+									/>
+								</div>
+								<ul class="flex flex-col gap-y-4 py-8">
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Flexible Options: Tailored loan plans to suit your financial
+										needs and budget.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Quick Approval: Streamlined processes to get you the funds
+										you need fast.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Competitive Rates: Enjoy low-interest rates and favorable
+										terms to finance your dream car.
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-span-4 bg-white p-8">
-							<div class="rounded-xl overflow-hidden h-60">
-								<img
-									src="./images/insurance.png"
-									alt=""
-								/>
-							</div>
-							<ul class="flex flex-col gap-y-4 py-8">
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Comprehensive Plans: Coverage options that protect you and your vehicle in any situation.
-								</li>
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Customizable Policies: Tailor your insurance to fit your specific needs and preferences.
-								</li>
 
-								<li class="flex gap-x-4 items-center text-lg">
-									<span class="text-3xl"
-										><i class="bx bx-check text-lime-500"></i
-									></span>
-									Reliable Support: Access to a dedicated team ready to assist you with claims and inquiries.
-								</li>
-							</ul>
+						<!-- Insurance -->
+						<div
+							class="tab-content shadow-xl rounded-lg grid grid-cols-6 w-full border-b-2 border-sky-500"
+							data-tab="insurance"
+						>
+							<div class="col-span-2 bg-gray-100 h-full p-8">
+								<div
+									class="w-16 h-16 rounded-full bg-sky-500 text-white inline-block flex items-center justify-center"
+								>
+									<i class="bx bxs-car-crash text-4xl"></i>
+								</div>
+								<h3 class="text-3xl font-semibold py-4">Insurance</h3>
+								<p class="pb-4 text-lg font-medium">
+									Drive with confidence knowing you're covered. We offer
+									comprehensive insurance plans tailored to your needs.
+								</p>
+								<div class="inline-flex items-center gap-x-2 justify-center">
+									<a
+										href="#"
+										class="px-4 py-2 rounded-lg border border-sky-500 text-xl text-sky-500 font-semibold"
+									>
+										Learn More
+									</a>
+								</div>
+							</div>
+							<div class="col-span-4 bg-white p-8">
+								<div class="rounded-xl overflow-hidden h-60">
+									<img
+										src="./images/insurance.png"
+										alt=""
+									/>
+								</div>
+								<ul class="flex flex-col gap-y-4 py-8">
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Comprehensive Coverage: Protect yourself and your vehicle
+										with our all-inclusive insurance plans.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Affordable Rates: Quality coverage at prices that won't
+										break the bank.
+									</li>
+									<li class="flex gap-x-4 items-center text-lg">
+										<span class="text-3xl"
+											><i class="bx bx-check text-lime-500"></i
+										></span>
+										Personalized Service: Work with our experienced agents to
+										find the best plan for you.
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- <section class="coursel-container">
+			<div class="carousel">
+				<button
+					class="carousel-button prev"
+					id="prevBtn"
+				>
+					&#8592;
+				</button>
+				<div class="carousel-track-container">
+					<ul class="carousel-track">
+						<li class="carousel-slide current-slide">
+							<img
+								class="carousel-image"
+								src="image1.jpg"
+								alt="Image 1"
+							/>
+							<div class="carousel-content">
+								<span class="price">$166</span>
+								<span class="discount">(67% off normally $500+)</span>
+								<h2>Chicago &rarr; Cancun</h2>
+							</div>
+						</li>
+						<li class="carousel-slide">
+							<img
+								class="carousel-image"
+								src="image2.jpg"
+								alt="Image 2"
+							/>
+							<div class="carousel-content">
+								<span class="price">$180</span>
+								<span class="discount">(65% off normally $520+)</span>
+								<h2>New York &rarr; Los Angeles</h2>
+							</div>
+						</li>
+						<li class="carousel-slide">
+							<img
+								class="carousel-image"
+								src="image3.jpg"
+								alt="Image 3"
+							/>
+							<div class="carousel-content">
+								<span class="price">$200</span>
+								<span class="discount">(60% off normally $550+)</span>
+								<h2>San Francisco &rarr; Miami</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button
+					class="carousel-button next"
+					id="nextBtn"
+				>
+					&#8594;
+				</button>
+			</div>
+		</section> -->
 		<!-- <section class="max-w-screen-2xl mx-auto h-[60vh]">
 			<div class="relative h-full">
 				<div
@@ -403,5 +469,111 @@
 				></div>
 			</div>
 		</section> -->
+		<section class="max-w-screen-2xl mx-auto">
+			<div
+				class="h-[600px] overflow-hidden py-16 max-w-screen-xl mx-auto grid grid-cols-6 gap-x-8"
+			>
+				<div class="col-span-2">
+					<img
+						src="./images/phone-mockup.png"
+						alt=""
+					/>
+				</div>
+				<div class="col-span-4">
+					<div class="flex flex-col h-full p-8 mt-32">
+						<h3 class="text-5xl font-bold pb-4">
+							Explore the GoDriveSmart App
+						</h3>
+						<p class="text-lg font-semibold">
+							Discover a new way to drive smarter with the GoDriveSmart app!
+							Whether you’re navigating through traffic or planning your next
+							road trip, our app provides real-time updates, intelligent route
+							suggestions, and personalized driving insights. Get ready to hit
+							the road with confidence and efficiency—GoDriveSmart is your
+							ultimate co-pilot!
+						</p>
+						<div class="flex gap-x-4 py-8">
+							<a href="#">
+								<img
+									src="./images/google-play.png"
+									alt=""
+									class="h-16"
+								/>
+							</a>
+							<a href="#">
+								<img
+									src="./images/apple-store.png"
+									alt=""
+									class="h-16"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="max-w-screen-2xl mx-auto">
+			<div
+				class="h-[600px] overflow-hidden py-16 max-w-screen-xl mx-auto grid grid-cols-6 gap-x-8"
+			>
+				<div class="col-span-4">
+					<div class="flex flex-col h-full p-8 mt-32">
+						<h3 class="text-5xl font-bold pb-4 text-pretty">
+							Already A Subscriber? Checkout Our Customer Portal
+						</h3>
+						<p class="text-lg font-semibold">
+							Discover a new way to drive smarter with the GoDriveSmart app!
+							Whether you’re navigating through traffic or planning your next
+							road trip, our app provides real-time updates, intelligent route
+							suggestions, and personalized driving insights. Get ready to hit
+							the road with confidence and efficiency—GoDriveSmart is your
+							ultimate co-pilot!
+						</p>
+						<div class="flex gap-x-4 py-8">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-span-2">
+					<img
+						src="./images/phone-mockup.png"
+						alt=""
+					/>
+				</div>
+			</div>
+		</section>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const tabButtons = document.querySelectorAll(".tab-button");
+				const tabContents = document.querySelectorAll(".tab-content");
+
+				tabButtons.forEach((button) => {
+					button.addEventListener("click", () => {
+						const tab = button.getAttribute("data-tab");
+
+						tabButtons.forEach((btn) => {
+							btn.classList.remove(
+								"border-b-2",
+								"border-sky-500",
+								"text-black",
+							);
+							btn.classList.add("border-transparent", "text-gray-500");
+						});
+
+						button.classList.remove("border-transparent", "text-gray-500");
+						button.classList.add("border-b-2", "border-sky-500", "text-black");
+
+						tabContents.forEach((content) => {
+							if (content.getAttribute("data-tab") === tab) {
+								content.classList.remove("hidden");
+							} else {
+								content.classList.add("hidden");
+							}
+						});
+					});
+				});
+			});
+		</script>
+		<script src="main.js"></script>
 	</body>
 </html>

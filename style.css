@@ -66,3 +66,91 @@
 	font-weight: 900;
 	font-style: italic;
 }
+
+
+.coursel-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.current-slide {
+  opacity: 1;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 14px;
+  color: #ff5733;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
